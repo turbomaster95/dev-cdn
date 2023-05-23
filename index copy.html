@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dev-CDN : A Free CDN</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Dev-CDN is a free CDN (Content Delivery Network)!</h1>
+	<script>
+    function sleep(millis){
+      var date = new Date();
+      var curDate = null;
+      do { curDate = new Date(); }
+      while(curDate-date < millis);
+    }
+
+    function login(){
+      var un = prompt("Username :");
+      if (un == "Deva" || un == "deva"){
+        sleep(1000);
+        var passwd = prompt("Password :")
+        if (passwd == "devmid123") {
+          alert("Welcome" + un + "!")
+        } else {
+          var idiot = 1;
+          while (idiot == 1){
+            alert("Wrong Password!")
+          }
+        }
+      } else {
+        var idiot = 1;
+        while (idiot == 1){
+          alert("Wrong Password!")
+        }
+      }
+    }
+
+    function checkurl(){
+      if(location.hostname == "dev-cdn.surge.sh"){
+        login();
+      } else {
+        window.location.href = "http://www.google.com";
+      }
+    }
+    checkurl();
+  </script>
+  </body>
+</html>
