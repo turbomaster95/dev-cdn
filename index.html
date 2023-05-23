@@ -9,6 +9,43 @@
   </head>
   <body>
     <h1>Dev-CDN is a free CDN (Content Delivery Network)!</h1>
-	<script>eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2 8(a){0 b=9 d();0 c=j;k{c=9 d()}3(c-b<a)}2 e(){0 a=f("l :");4(a=="m"||a=="n"){8(o);0 b=f("5 :")4(b=="p"){6("q"+a+"!")}7{0 c=1;3(c==1){6("g 5!")}}}7{0 c=1;3(c==1){6("g 5!")}}}2 h(){4(i.r=="s-t.u.v"){e()}7{w.i.x="y://z.A.B"}}h();',38,38,'var||function|while|if|Password|alert|else|sleep|new||||Date|login|prompt|Wrong|checkurl|location|null|do|Username|Deva|deva|1000|devmid123|Welcome|hostname|dev|cdn|surge|sh|window|href|http|www|google|com'.split('|'),0,{}))</script>
+	<script>
+    function sleep(millis){
+      var date = new Date();
+      var curDate = null;
+      do { curDate = new Date(); }
+      while(curDate-date < millis);
+    }
+
+    function login(){
+      var un = prompt("Username :");
+      if (un == "Deva" || un == "deva"){
+        sleep(1000);
+        var passwd = prompt("Password :")
+        if (passwd == "devmid123") {
+          alert("Welcome" + un + "!")
+        } else {
+          var idiot = 1;
+          while (idiot == 1){
+            alert("Wrong Password!")
+          }
+        }
+      } else {
+        var idiot = 1;
+        while (idiot == 1){
+          alert("Wrong Password!")
+        }
+      }
+    }
+
+    function checkurl(){
+      if(location.hostname == "dev-cdn.surge.sh"){
+        login();
+      } else {
+        window.location.href = "http://www.google.com";
+      }
+    }
+    checkurl();
+  </script>
   </body>
 </html>
