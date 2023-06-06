@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: 16
       - run: npm install -g surge
-      - run: surge ./ dev-cdn.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      - run: surge ./ https://dev-cdn.surge.sh --token ${{ secrets.SURGE_TOKEN }}
