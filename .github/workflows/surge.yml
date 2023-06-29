@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: 16
       - run: npm install -g surge
-      - run: surge ./ https://cdn.deva.is-cool.dev --token ${{ secrets.SURGE_TOKEN }}
+      - run: surge ./ http://cdn.deva.is-cool.dev --token ${{ secrets.SURGE_TOKEN }}
